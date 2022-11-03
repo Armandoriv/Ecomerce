@@ -1,0 +1,23 @@
+.ora {
+    display: flex;
+}
+u {
+    justify-content: center;
+}
+.A {
+    color: white;
+}
+.A:hover{
+    color: beige;
+}
+.bro {
+    background-color: #31572c;
+}
+.bi-cart4 {
+    color: white;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.logo {
+    width: 50px;
+}
