@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ItemListContainer.css'
+import './home.css'
 
-const ItemListContainer = () => {
+const Home = () => {
     return (
+        
         <section className='container intro'>
             <div className='intro1'>
                 <h1 className='Titulo animate__animated animate__fadeInDown'>¡Bienvenido!</h1>
@@ -16,4 +17,4 @@ const ItemListContainer = () => {
     );
 }
 
-export default ItemListContainer;
+export default Home;
