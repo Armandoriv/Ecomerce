@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Ecomerce/static/css/main.64eb14d7.css",
+    "main.js": "/Ecomerce/static/js/main.cc968db2.js",
+    "static/media/montañaback.jpg": "/Ecomerce/static/media/montañaback.20cd5c21b2d23e91308e.jpg",
+    "index.html": "/Ecomerce/index.html",
+    "main.64eb14d7.css.map": "/Ecomerce/static/css/main.64eb14d7.css.map",
+    "main.cc968db2.js.map": "/Ecomerce/static/js/main.cc968db2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64eb14d7.css",
+    "static/js/main.cc968db2.js"
+  ]
+}
