@@ -1,14 +1,17 @@
 import './app.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { DarkModeProvider } from '../context/darkMode';
+
 import Navbar from './Navbar/Navbar';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Cart from './Cart/Cart'
 import ItemListContainer from './ItemListContainer/ItemListContainer';
-import Home from './Home/Home';
+import Home from './Home/Home';;
 const App = () => {  
   return (
     <>
-      <BrowserRouter>
+    <DarkModeProvider>
+    <BrowserRouter>
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -18,6 +21,8 @@ const App = () => {
           <Route path='/category/:category' element={<ItemListContainer/>}/>
         </Routes>
       </BrowserRouter>
+    </DarkModeProvider>
+      
       
     </>
    
