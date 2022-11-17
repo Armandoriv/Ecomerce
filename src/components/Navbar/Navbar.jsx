@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import Dropdown from './Dropdown/Dropdown';
 import CartWidget from '../CartWidget/CartWidget';
+import React from 'react';
 import './navbar.css'
-const Navbar = () => {
+const Navbar = React.memo(() => {
     return (
         
       <nav className="navbar fixed-top navbar-expand-lg bro mb-5">
@@ -24,6 +25,6 @@ const Navbar = () => {
     </nav>
         
     );
-}
+})
 
 export default Navbar;

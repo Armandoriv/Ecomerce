@@ -1,7 +1,7 @@
 import './app.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { DarkModeProvider } from '../context/darkMode';
-
+import { CartContextProvider } from '../context/CartContext';
+import Checkout from './Checkout/Checkout';
 import Navbar from './Navbar/Navbar';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Cart from './Cart/Cart'
@@ -10,8 +10,8 @@ import Home from './Home/Home';;
 const App = () => {  
   return (
     <>
-    <DarkModeProvider>
     <BrowserRouter>
+      <CartContextProvider>
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
@@ -19,33 +19,13 @@ const App = () => {
           <Route path='/product/:id' element={<ItemDetailContainer/>}/>
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/category/:category' element={<ItemListContainer/>}/>
+          <Route path='/checkout' element={<Checkout/>}/>
         </Routes>
-      </BrowserRouter>
-    </DarkModeProvider>
-      
-      
+      </CartContextProvider>
+    </BrowserRouter>  
     </>
    
   );
 }
 
 export default App;
-
- /*const alumno1 = {nombre: "Pepe", apellido: "Perez"}
-    const alumno2 = {nombre: "Maria", apellido: "Martinez"}
-    const alumno3 = {nombre: "Pedro", apellido: "Parker"}
-
-    const alumnos = [alumno1, alumno2, alumno3]
-
-    const consultarAlumnos = (permiso) => {
-        return new Promise( (res, rej) => {
-            if(permiso) {
-                res(alumnos)
-            }
-            rej("No cuenta con los permisos suficientes")
-        })
-    }
-
-    consultarAlumnos(true)
-    .then(x => console.log(x))
-    .catch(error => console.error(error))*/
